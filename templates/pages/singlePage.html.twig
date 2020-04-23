@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{page.titre}}{% endblock %}
+
+{% set description = page.introduction %}
+
+{% block body %}
+    {% include 'partials/pageHeader.html.twig' %}
+    {% include "partials/zone.html.twig" with {'zone': 'top'} %}
+    {{page.contenu}}
+    <br>
+    {% include "partials/zone.html.twig" with {'zone': 'milieu'} %}
+    {% include "partials/zone.html.twig" with {'zone': 'bas'} %}
+{% endblock %}

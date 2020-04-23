@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - geekdesigndevbd@127.0.0.1" uuid="c46b08b8-c312-4403-bded-2cd9eba07ebf">
+    <database-info product="MySQL" version="5.7.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="geekdesigndevbd"/>
+      <table id="2" parent="1" name="migration_versions"/>
+      <table id="3" parent="1" name="pages"/>
+      <column id="4" parent="2" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(14)</data-type>
+      </column>
+      <column id="5" parent="2" name="executed_at">
+        <comment>(DC2Type:datetime_immutable)</comment>
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="6" parent="2" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="7" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="8" parent="3" name="titre">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="3" name="slug">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="11" parent="3" name="introduction">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="12" parent="3" name="contenu">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="13" parent="3" name="image">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="14" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - mysql://root:root@127.0.0.1:3307/geekdesigndevbd [2]" uuid="00f368db-e17a-4cd0-a36f-b1d3134a8136">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

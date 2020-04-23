@@ -1,0 +1,9 @@
+    {% for bloc in blocks | sort((a, b) => a.niveau <=> b.niveau) %}
+        {% if bloc.page == page.titre %}
+            {% if bloc.zone == zone %}
+                {% if bloc.isOnline == true %}
+                    {% include "layoutBlock/#{bloc.layout.camelName}.html.twig" %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}

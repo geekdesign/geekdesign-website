@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% set description = 'page.introduction' %}
+
+{% block body %}
+    {% include 'partials/homeHeader.html.twig' %}
+    {% include "partials/zone.html.twig" with {'zone': 'top'} %}
+    <!-- Processus -->
+	<!-- Ligne 1-->
+	<div class="uk-container uk-margin-large-top">
+		<div class="uk-grid-medium uk-margin-large-top uk-child-width-expand@s uk-text-center uk-margin-large" uk-grid>
+            {% include "partials/zoneProcessus.html.twig" with {'zone': 'processus'} %}
+            {% include "processus/processusLigne1.html.twig" %}
+        </div>
+    </div>
+    <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+		<div class="uk-grid-medium uk-margin-large-bottom uk-child-width-expand@s uk-text-center uk-margin-large" uk-grid>
+            {% include "processus/processusLigne2.html.twig" %}
+        </div>
+    </div>
+    <!-- Portfolio -->
+	<div class="uk-height-viewport uk-background-secondary">
+		<div class="uk-container uk-light ">
+            {% include "partials/zoneServicesContact.html.twig"  with {'zone': 'projets'}%}
+            {% include "projets/projetsListeHome.html.twig"%}
+        </div>
+	</div>
+    <!-- Portfolio -->
+	<div class="uk-height-viewport">
+		<div class="uk-container">
+            {% include "partials/zoneServicesContact.html.twig"  with {'zone': 'services'}%}
+			{% include "services/servicesList.html.twig" %}
+		</div>
+	</div>
+    {% include "partials/zone.html.twig" with {'zone': 'milieu'} %}
+    	<!-- Contact -->
+	<div class="uk-height-viewport">
+		<div class="uk-container">
+            {% include "partials/zoneServicesContact.html.twig"  with {'zone': 'contact'}%}
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div>
+                    
+                    {{ form_start(contactform) }}
+                    <div class="uk-grid-small uk-margin-medium-top uk-margin-medium-bottom" uk-grid>
+                        
+                        <div class="uk-width-1-1">
+                            {{ form_errors(contactform) }}
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            {{form_widget(contactform.prenom)}}
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            {{form_widget(contactform.nom)}}
+                        </div>
+                        <div class="uk-width-1-1">
+                            {{form_widget(contactform.email)}}
+                        </div>
+                        <div class="uk-width-1-1">
+                            {{form_widget(contactform.message)}}
+                        </div>
+                        <div class="uk-width-1-1">
+                            {{form_row(contactform.envoyer)}}
+                        </div>
+                    </div>
+                    {{ form_end(contactform) }}
+                    
+                </div>
+                <div class="uk-grid-item-match uk-flex-middle">
+                    <div class="uk-card uk-card-default uk-card-body uk-background-secondary font-blanc">
+                        <h3 class="uk-margin-large-top font-blanc">Pierre-Alain Schütz</h3>
+                        <p>
+                            schutz.pa@geekdesign.ch <br>
+                            079 334 64 96
+                        </p>
+                        <ul class="uk-iconnav uk-margin-large-bottom font-blanc">
+                            <li><a href="#" uk-icon="icon: twitter"></a></li>
+                            <li><a href="#" uk-icon="icon: facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "partials/footer.html.twig" %}
+{% endblock %}

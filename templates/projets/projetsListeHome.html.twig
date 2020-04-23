@@ -1,0 +1,55 @@
+{% set items = projets %}
+{% for item in items %}
+{% if item.id is odd %}
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-margin-large-top uk-margin-large-bottom" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="https://html.waituk.com/roxine/img/img-34.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="https://html.waituk.com/roxine/img/img-32.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">{{item.nom}}</h3>
+            <p>{{item.introduction}}</p>
+            <p class="uk-article-meta uk-text-baseline">Visiter le site de: <a href="{{item.lien}}">{{item.nom}}</a></p>
+        </div>
+    </div>
+</div>
+{% elseif item.id is even %}
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="https://html.waituk.com/roxine/img/img-34.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="https://html.waituk.com/roxine/img/img-32.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Masseuse Corminboeuf</h3>
+            <span class="uk-label uk-label-primary">WebDeign</span> <span class="uk-label uk-label-warning">Wordpress</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p class="uk-article-meta uk-text-baseline">Visiter le site de: <a href="#">masseuse-corminboeuf.ch</a></p>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}

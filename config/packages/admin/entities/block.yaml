@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    Blocs:
+      class: App\Entity\Block
+      list:
+        title: "Liste des Blocs"
+        fields: 
+          - { property: 'id', label: 'N°' }
+          - { property: 'isOnline', label: 'En ligne' }
+          - { property: 'nom', label: 'Nom' }
+          - { property: 'layout', label: 'Layout du block'}
+          - { property: 'page', label: 'Sur la page'}
+          - { property: 'zone', label: 'Zone' }
+          - { property: 'niveau', label: 'Niveau' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

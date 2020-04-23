@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    Articles:
+      class: App\Entity\Articles
+      list:
+        title: "Liste des articles"
+        fields: 
+          - { property: 'id', label: 'N°' }
+          - { property: 'isOnline', label: 'En ligne' }
+          - { property: 'titre', label: 'Titre' }
+          - { property: 'createdAt', label: 'Date de création', format: 'j.m.Y'  }
+          - { property: 'updatedAt', label: 'Dernière mise à jour', format: 'j.m.Y'  }
+          - { property: 'categorie', label: 'Catégories' }
+          - 'tags'
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

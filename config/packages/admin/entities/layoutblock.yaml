@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    LayoutBlock:
+      class: App\Entity\LayoutBlock
+      list:
+        title: "Liste des layout de block"
+        fields: 
+          - { property: 'id', label: 'N°' }
+          - { property: 'nom', label: 'Nom' }
+          - { property: 'camelName', label: 'Nom en camelCase' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+      form:
+        fields:
+          - {property: 'nom'}
+          - {property: 'description'}

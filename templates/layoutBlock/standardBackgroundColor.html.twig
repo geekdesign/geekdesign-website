@@ -1,0 +1,15 @@
+{% set layout = 'standardBackgroundColor' %}
+
+    {% if bloc.layout.camelName == layout %}
+    <div class="uk-background" style="background-color: {{bloc.couleur}};">
+		<div class="uk-text-center uk-padding-large">
+			<h1 class="uk-heading-small {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.titre}}</h1>
+            <p class="uk-text-center uk-margin-medium-top uk-margin-large-bottom {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.content}}</p>
+            {% if bloc.lien != null %}
+                <a href="{{bloc.lien}}" class="uk-button uk-button-default uk-light" target="_blank">{{bloc.textLien}}</a>
+            {% endif %}
+			
+		</div>
+    </div>
+    {% endif %}
+    

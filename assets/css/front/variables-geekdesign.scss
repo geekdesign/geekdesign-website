@@ -1,0 +1,84 @@
+//
+// Component: Variables
+//
+// ========================================================================
+
+
+// Global variables
+// ========================================================================
+
+//
+// Colors
+//
+$gd-orange: rgb(230, 76, 60);
+$gd-bleu: rgba(44, 62, 80, 1);
+$gd-gris: rgba(51, 51, 51, 1);
+$gd-blanc: rgba(255,255,255,.7);
+
+$global-secondary-background: $gd-bleu;
+$global-color:$gd-bleu;
+$global-emphasis-color:$gd-bleu;
+$base-heading-color:$gd-bleu;
+
+$link-text-hover-color: $gd-orange;
+$link-heading-hover-color: $gd-orange;
+$base-link-color: $gd-orange;
+$base-link-hover-color: $gd-bleu;
+//
+// Typography
+//
+.font-orange {
+    color: $gd-orange!important;
+}
+
+.font-bleu {
+    color: $gd-bleu!important;
+}
+
+.font-blanc {
+    color: $gd-blanc!important;
+}
+
+.font-gris {
+    color: $gd-gris!important;
+}
+
+
+//
+// Backgrounds
+//
+.bg-orange {
+    background-color: $gd-orange!important;
+}
+
+.bg-bleu {
+    background-color: $gd-bleu!important;
+}
+
+.bg-blanc {
+    background-color: $gd-blanc!important;
+}
+
+.bg-gris {
+    background-color: $gd-gris!important;
+}
+
+
+//
+// Borders
+//
+
+
+//
+// Spacings
+//
+
+
+//
+// Controls
+//
+
+
+//
+// Z-index
+//

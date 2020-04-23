@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0583eaf3-0e10-47e5-85c4-acce480e586c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/composerJson.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/_bootstrap-custom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/base/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/base/_colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/base/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_accordion-primary.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_accordion-secondary.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_accordion.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_author.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_block-heading.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_blockquotes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_blog.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_bordered-document.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_breadcrumb.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_button-alternate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_caption-fade-up.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_caption-hover-full.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_caption-slide-left.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_cart.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_centered-col.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_contact-form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_contact-info.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_content-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_content-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_count-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_data-table.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_date-time-picker.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_fancybox.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_filter-nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_grid-box.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_hover-effects.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_ico-boxes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_icon-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_intro.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_logo-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_map.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_media-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_navigation copy.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_navigation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_navigation.scss.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_newsletter-form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_page-banners.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_parallax-images.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_parallax.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_portfolio.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_post.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_preloader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_pricing-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_progressbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_range-slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_rating.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_search-form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_select-boxes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_select-pickers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_side-panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_sign-up-form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_site-search.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_social-networks.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_tab-alternate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_tab.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_tag.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_team.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_testimonial.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/components/_visual.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/construction.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/fonts/bootstrap/bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/fonts/icomoon/icomoon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/intro.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/layout/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/layout/_header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/modifiers/_custom-variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/modifiers/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/modifiers/_rem.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/skins/_construction.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/skins/_default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-select/_bootstrap-select.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-select/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-slider-master/_bootstrap-slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-slider-master/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-slider-master/_rules.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap-slider-master/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/.scss-lint.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_breadcrumb.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_button-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_card.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_close.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_code.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_custom-forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_custom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_images.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_input-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_jumbotron.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_media.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_popover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_reboot.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_responsive-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_transitions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_background-variant.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_breakpoints.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_grid-framework.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_hover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_nav-divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_navbar-align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_reset-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_resize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_table-row.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_text-emphasis.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_text-hide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_text-truncate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_transforms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/mixins/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_background.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_borders.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_display.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_flex.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_position.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_screenreaders.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_sizing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_spacing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/bootstrap/scss/utilities/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/mega-menu/_mega-menu-core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/mega-menu/_mega-menu-media.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/vendors/mega-menu/_mega-menu-theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/widgets/_instagram.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/widgets/_recent-post.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/front/widgets/_twitter.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/front/app.scss" afterPath="$PROJECT_DIR$/assets/css/front/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/front/app.js" afterPath="$PROJECT_DIR$/assets/js/front/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+    </list>
+    <ignored path="geekdesign.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - geekdesigndevbd@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="pages" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - geekdesigndevbd@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="geekdesign" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.359375">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#34#55#0#PHP" expanded="true" />
+                <element signature="e#226#275#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Pages.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AnnotationPHP</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>PHPDocPHP</id>
+          </State>
+          <State>
+            <id>ServiceSymfony</id>
+          </State>
+          <State>
+            <id>Symfony</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PHPDocPHP</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geekdesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0583eaf3-0e10-47e5-85c4-acce480e586c" name="Default" comment="" />
+      <created>1587065720097</created>
+      <option name="number" value="Default" />
+      <updated>1587065720097</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="100" width="1720" height="880" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#226#275#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#226#275#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#226#275#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/c46b08b8-c312-4403-bded-2cd9eba07ebf">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>c46b08b8-c312-4403-bded-2cd9eba07ebf</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="490.0" y="489.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c46b08b8-c312-4403-bded-2cd9eba07ebf/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2759706">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.359375">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+            <element signature="e#226#275#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

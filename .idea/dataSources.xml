@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2042229706">
-    <data-source source="LOCAL" name="MySQL - mysql://root:root@127.0.0.1:3307/geekdesigndevbd" uuid="c46b08b8-c312-4403-bded-2cd9eba07ebf">
+  <component name="DataSourceManagerImpl" format="xml" hash="335395540">
+    <data-source source="LOCAL" name="MySQL - geekdesigndevbd@127.0.0.1" uuid="c46b08b8-c312-4403-bded-2cd9eba07ebf">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3307/geekdesigndevbd</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - mysql://root:root@127.0.0.1:3307/geekdesigndevbd [2]" uuid="00f368db-e17a-4cd0-a36f-b1d3134a8136">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>mysql://root:root@127.0.0.1:3307/geekdesigndevbd</jdbc-url>
       <driver-properties>

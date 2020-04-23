@@ -14,6 +14,19 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
+    .copyFiles({
+        from: './assets/img',
+        
+        // optional target path, relative to the output dir
+        to: 'img/[path][name].[ext]',
+        
+        // if versioning is enabled, add the file hash too
+        //to: 'imgs/[path][name].[hash:8].[ext]',
+        
+        // only copy files matching this pattern
+        pattern: /\.(png|jpg|jpeg|gif)$/
+    })
+
     /*
      * ENTRY CONFIG
      *
@@ -25,8 +38,12 @@ Encore
      */
 
     .addEntry('js/front/app', './assets/js/front/app.js')
-    .addStyleEntry('css/front/main', './assets/css/front/main.scss')
+    .addEntry('js/admin/app', './assets/js/admin/app.js')
+    .addStyleEntry('css/main', './assets/css/csskit.scss')
     .addStyleEntry('css/front/app', './assets/css/front/app.scss')
+    .addStyleEntry('css/front/style', './assets/css/front/style.scss')
+    .addStyleEntry('css/admin/app', './assets/css/front/app.scss')
+    .addStyleEntry('css/admin/style', './assets/css/front/style.scss')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
@@ -57,7 +74,7 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -72,6 +89,7 @@ Encore
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
+
 ;
 
 var config = Encore.getWebpackConfig();

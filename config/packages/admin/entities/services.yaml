@@ -1,0 +1,16 @@
+easy_admin:
+  entities:
+    Services:
+      class: App\Entity\Services
+      list:
+        title: "Liste des Services"
+        fields: 
+          - { property: 'id', label: 'N°' }
+          - { property: 'isOnline', label: 'En ligne' }
+          - { property: 'titre', label: 'Titre' }
+          - { property: 'prix', label: 'Prix'}
+          - { property: 'isBest', label: 'Favoris' }
+          - { property: 'niveau', label: 'Niveau' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

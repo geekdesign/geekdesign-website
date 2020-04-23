@@ -1,0 +1,22 @@
+easy_admin:
+  design:
+    menu:
+      - label: 'Blog'
+      - {entity: 'Articles', icon: 'newspaper-o'}
+      - {entity: 'Categories', icon: 'inbox'}
+      - {entity: 'Tag', icon: 'tags'}
+      - label: 'Pages'
+      - {entity: 'Pages', icon: 'file-alt'}
+      - {entity: 'Zones', label: 'Zones', icon: 'border-none'}
+      - label: 'Processus'
+      - {entity: 'Processus', label: 'Processus', icon: 'code-branch'}
+      - label: 'Services'
+      - {entity: 'Services', label: 'Services', icon: 'concierge-bell'}
+      - label: 'Block'
+      - {entity: 'Blocs', label: 'Blocs', icon: 'cubes'}
+      - {entity: 'LayoutBlock', label: 'Layout', icon: 'window-restore'}
+      - label: 'Média'
+      - label: 'Portfolio'
+      - {entity: 'Projets', label: 'Projets', icon: 'folder-open'}
+      - {entity: 'Technologie', params: { sortField: 'nom', sortDirection: 'ASC' }, icon: 'inbox'}
+      - {entity: 'Types', icon: 'inbox'}

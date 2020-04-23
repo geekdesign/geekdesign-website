@@ -1,0 +1,18 @@
+    {% for bloc in blocks | sort((a, b) => a.niveau <=> b.niveau) %}
+        {% if bloc.page == page.titre %}
+            {% if bloc.zone == zone %}
+                {% if bloc.isOnline == true %}
+                    
+
+                <div>
+                    <div class="uk-margin-large-top">
+                        <h1 class="uk-text-left uk-text-large uk-text-uppercase uk-text-bolder">{{bloc.titre}}</h1>
+                        <p class="uk-text-left">{{bloc.content}}</p>
+                    </div>
+                </div>
+
+
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
