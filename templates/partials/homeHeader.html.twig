@@ -1,9 +1,8 @@
 <!-- Header -->
 <div class="uk-cover-container uk-height-viewport">
-    <video src="https://str15.infomaniak.ch/dl/10bf6baaa35175602bc825285a2e8c18/5e975669/pierre-alainschtz_vod/1/d/videoforyourhomepagebackground1.37022.12.mp4" autoplay loop muted playsinline uk-cover></video>
-    <!-- <img src="https://html.waituk.com/roxine/img/big-14.jpg" alt="" class="uk-animation-kenburns"> -->
+    <video src="{{upload_path}}videoforyourhomepagebackground1.37022.12.mp4" autoplay loop muted playsinline uk-cover></video>
         <div class="uk-position-cover uk-overlay uk-overlay-primary">
-            {% include 'partials/nav.html.twig' %}
+            {% include 'partials/navHome.html.twig' %}
     <!-- Content Header -->
     <div uk-height-viewport="offset-top: true; offset-bottom: true" class="uk-section uk-section-small uk-flex uk-flex-middle uk-text-center" style="min-height: calc((100vh - 80px) - 80px);">
             <div class="uk-width-1-1">
@@ -16,10 +15,10 @@
                         </p>
                     <div uk-grid="" class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center uk-grid uk-animation-fade">
                         <div class="uk-first-column"> 
-                            <a href="docs/introduction" class="uk-button uk-button-default uk-button-large">Get Started</a>
+                            <a href="{{ path('home') }}#contact" class="uk-button uk-button-default uk-button-large">Me contacter par mail</a>
                         </div>
                         <div>
-                            <a href="https://github.com/uikit/uikit" class="uk-button uk-button-border tm-button-default uk-button-large tm-button-large ">Github</a>
+                            <a href="https://api.whatsapp.com/send?phone=41793346496" class="uk-button uk-button-border tm-button-default uk-button-large tm-button-large ">par message sur WhatsApp</a>
                         </div>
                     </div>
                 </div>

@@ -4,3 +4,81 @@
 .gd-navbar-home li a{
     font-size: small;
 }
+
+.slideup {
+    overflow: hidden;
+}
+
+.slideup img:hover {
+    transform: translate(0, -100%);
+    transition-timing-function: ease;
+    transition-duration: 10s;
+}
+
+.shadow-box-left{
+    -webkit-box-shadow: -7px 11px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 11px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: -7px 11px 20px -6px rgba(0,0,0,0.75);
+}
+
+.shadow-box-right{
+-webkit-box-shadow: 9px 11px 20px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 11px 20px -6px rgba(0,0,0,0.75);
+box-shadow: 9px 11px 20px -6px rgba(0,0,0,0.75);
+}
+
+.shadow-box-center{
+    -webkit-box-shadow: 0px 11px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 20px -6px rgba(0,0,0,0.75);
+}
+
+.responsive-layout{
+    position: relative;
+    height: 80vh;
+}
+
+.phone{
+    position: absolute;
+    left: -70px; 
+    top: 180px;
+}
+
+.laptop{
+    position: absolute;
+}
+
+.laptop:hover{
+    position: absolute;
+    z-index: 999;
+}
+
+.ipad{
+    position: absolute;
+    left: 460px; 
+    top: 100px;
+}
+
+.uk-button.bg-orange:hover{
+    background-color: $gd-orange-hover!important;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $gd-orange;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: $gd-bleu;
+  }

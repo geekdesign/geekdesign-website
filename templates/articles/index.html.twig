@@ -4,8 +4,29 @@
 
 {% block body %}
     {% include 'partials/pageHeader.html.twig' %}
-    {% for article in articles %}
-        <h1>{{article.titre}}</h1>
-    {% endfor %}
-
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+        {% if posts|length > 0 %}
+            {% for article in posts %}
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top uk-overflow-hidden">
+                            <img class="uk-animation-reverse" src="{{upload_path}}articles/{{article.thumbnail}}" alt="{{article.thumbnail}}" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">{{article.titre}}</h3>
+                            <p class="uk-article-meta">Ecrit le {{article.createdAt.format('d.m.Y')}}</p>
+                            <p>{{article.introduction | raw}}</p>
+                            <a href="#" class="uk-button uk-button-secondary">Lire l'article</a>
+                        </div>
+                    </div>
+            {% endfor %}
+        {% else %}
+            <h2 class="uk-heading-divider">Aucuns articles de blog trouvé, désolé !</h2>
+            <a href="{{ path('home') }}" class="uk-button uk-button-secondary">Retour à la page d'accueil</a>
+        {% endif %}
+        </div>
+        </div>
+</div>
+{% include "partials/footer.html.twig" %}
 {% endblock %}

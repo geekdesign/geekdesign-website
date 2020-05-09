@@ -4,17 +4,9 @@
         <div class="uk-navbar-center-left">
             <div>
                 <ul class="uk-navbar-nav uk-text-uppercase gd-navbar-home">
-                    <li class="uk-active"><a href="{{ path('home') }}">Home</a></li>
-                    <li>
-                        <a href="#">Travail</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li {% if app.request.get('_route') == 'home' %}class="uk-active"{% endif %}><a href="{{ path('home') }}">Home</a></li>
+                    <li><a href="{{ path('home') }}#travail">Travail</a></li>
+                    <li><a href="{{ path('home') }}#portfolio">Portfolio</a></li>
                 </ul>
             </div>
         </div>
@@ -24,9 +16,9 @@
         <div class="uk-navbar-center-right">
             <div>
                 <ul class="uk-navbar-nav uk-text-uppercase gd-navbar-home">
-                    <li><a href="#">Formules</a></li>
-                    <li><a href="{{ path('pages_show', {'slug': 'blog'}) }}">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ path('home') }}#formules">Formules</a></li>
+                    <li {% if app.request.get('_route') == 'blog' %}class="uk-active"{% endif %}><a href="{{ path('blog') }}">Blog</a></li>
+                    <li><a href="{{ path('home') }}#contact">Contact</a></li>
                 </ul>
                </div>
         </div>
@@ -46,12 +38,12 @@
     <div class="uk-offcanvas-bar">
 
         <ul class="uk-nav uk-nav-default font-blanc">
-            <li class="uk-active"><a href="{{ path('home') }}">Home</a></li>
-            <li><a href="#">Travail</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Formules</a></li>
-            <li><a href="{{ path('pages_show', {'slug': 'blog'}) }}">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li {% if app.request.get('_route') == 'home' %}class="uk-active"{% endif %}><a href="{{ path('home') }}">Home</a></li>
+            <li><a href="{{ path('home') }}#travail">Travail</a></li>
+            <li><a href="{{ path('home') }}#portfolio">Portfolio</a></li>
+            <li><a href="{{ path('home') }}#formules">Formules</a></li>
+            <li {% if app.request.get('_route') == 'blog' %}class="uk-active"{% endif %}><a href="{{ path('blog') }}">Blog</a></li>
+            <li><a href="{{ path('home') }}#contact">Contact</a></li>
         </ul>
 
     </div>

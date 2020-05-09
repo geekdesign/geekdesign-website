@@ -6,10 +6,12 @@ use Cocur\Slugify\Slugify;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PagesRepository")
  * @ORM\HasLifecycleCallbacks
+ * @Vich\Uploadable()
  */
 class Pages
 {
@@ -64,6 +66,17 @@ class Pages
      * @ORM\OneToMany(targetEntity="App\Entity\Block", mappedBy="page")
      */
     private $blocks;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $thumbnail;
+
+    /**
+     * @Vich\UploadableField(mapping="pages_thumbnails", fileNameProperty="thumbnail")
+     */
+    private $thumbnailFile;
+
 
     public function __construct()
     {
@@ -232,5 +245,36 @@ class Pages
         }
 
         return $this;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(?string $thumbnail): self
+    {
+        $this->thumbnail = $thumbnail;
+
+        return $this;
+    }
+
+    public function getThumbnailFile()
+    {
+        return $this->thumbnailFile;
+    }
+
+    /**
+     *
+     * @param string|null $thumbnailFile
+     * @throws \Exception
+     */
+    public function setThumbnailFile($thumbnailFile): void
+    {
+        $this->thumbnailFile = $thumbnailFile;
+
+        if($thumbnailFile) {
+            $this->updatedAt = new \DateTime();
+        }
     }
 }

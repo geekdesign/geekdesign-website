@@ -196,7 +196,7 @@ ul.uk-nav-sub {
 
 /* Active */
 .uk-nav-default > li.uk-active > a {
-    color: $nav-default-item-active-color;
+    color: $gd-orange;
     @if(mixin-exists(hook-nav-default-item-active)) {@include hook-nav-default-item-active();}
 }
 

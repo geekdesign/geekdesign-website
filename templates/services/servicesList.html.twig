@@ -8,7 +8,7 @@
                     <h3 class="uk-card-title uk-text-center uk-text-light font-blanc">{{service.titre}}</h3>
                     <h1 class="uk-heading-small uk-margin-small-top uk-text-uppercase font-blanc">{{service.prix}} chf</h1>
                     <p>{{service.description}}</p>
-                    <a href="#" class="uk-button uk-button-default uk-light uk-margin-msmall-top">Me contacter</a>
+                    <a href="{{ path('home') }}#contact" class="uk-button uk-button-default uk-light uk-margin-msmall-top">Me contacter</a>
                 </div>
             </div>
             {% else %}
@@ -18,7 +18,7 @@
                     <h4 class="uk-card-title uk-text-center uk-text-light">{{service.titre}}</h4>
                     <h4 class="uk-heading-small uk-margin-small-top uk-text-uppercase">{{service.prix}} chf</h4>
                     <p>{{service.description}}</p>
-                    <a href="#" class="uk-button uk-button-default uk-margin-medium-bottom uk-margin-small-top">Me contacter</a>
+                    <a href="{{ path('home') }}#contact" class="uk-button uk-button-default uk-margin-medium-bottom uk-margin-small-top">Me contacter</a>
                 </div>
             </div>
             {% endif %}

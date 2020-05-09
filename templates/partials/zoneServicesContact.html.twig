@@ -6,7 +6,7 @@
             
 
         <h1 class="uk-heading-small uk-text-center uk-margin-large-top {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.titre}}</h1>
-        <p class="uk-text-center uk-margin-medium-top uk-margin-large-bottom {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.content}}</p>
+        <p class="uk-text-center uk-margin-medium-top uk-margin-large-bottom {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.content | raw}}</p>
 
 
         {% endif %}

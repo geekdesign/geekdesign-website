@@ -2,6 +2,34 @@ easy_admin:
   entities:
     Projets:
       class: App\Entity\Projets
+      design:
+        form_theme:
+            - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+        assets:
+            js:
+                - '/bundles/cksourceckfinder/ckfinder/ckfinder.js'
+                - '/js/setup-ckfinder.js'
+      form:
+        fields:
+          - { type: 'group', icon: 'pencil', label: 'Déscription du projet', css_class: 'col-lg-7'} 
+          - nom
+          - introduction
+          - { property: 'description', label: 'Déscription', type: 'text_editor'}
+          - { type: 'group', icon: 'cog', label: 'Paramètres', css_class: 'col-lg-5'}
+          - { property: 'lien', label: 'Lien du projet'}
+          - { property: 'type', label: 'Types' }
+          - { property: 'technologie', label: 'Technologie' }
+          - { property: 'is_online', label: 'En ligne', type: 'checkbox'}
+          - { type: 'group', icon: 'cog', label: 'Images du diaporama', css_class: 'col-lg-4'}
+          - { property: 'attachments', type: 'collection', type_options: {entry_type: 'App\Form\AttachmentType', by_reference: false }, label: 'Diaporama' }
+          - { type: 'group', icon: 'cog', label: 'Images SI webdesign', css_class: 'col-lg-4'}
+          - { property: 'responsiveImageLaptopFile', type: 'vich_image', label: 'Image'}
+          - { property: 'responsiveImageIpadFile', type: 'vich_image', label: 'Image'}
+          - { property: 'responsiveImagePhoneFile', type: 'vich_image', label: 'Image'}
+          - { type: 'group', icon: 'cog', label: 'Images SI print ou graphisme', css_class: 'col-lg-4'}
+          - { property: 'printImage1File', type: 'vich_image', label: 'Image'}
+          - { property: 'printImage2File', type: 'vich_image', label: 'Image'}
+          - { property: 'printImage3File', type: 'vich_image', label: 'Image'}
       list:
         title: "Liste des projets"
         fields: 

@@ -6,10 +6,12 @@ use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticlesRepository")
  * @ORM\HasLifecycleCallbacks
+ * @Vich\Uploadable()
  */
 class Articles
 {
@@ -64,6 +66,17 @@ class Articles
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $updatedAt;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $thumbnail;
+
+    /**
+     * @Vich\UploadableField(mapping="articles_thumbnails", fileNameProperty="thumbnail")
+     */
+    private $thumbnailFile;
+
 
     public function __construct()
     {
@@ -163,10 +176,7 @@ class Articles
         return $this;
     }
 
-    public function __toString()
-    {
-        return $this->titre;
-    }
+    
 
     /**
      * @return Collection|Tag[]
@@ -227,6 +237,42 @@ class Articles
         $this->setUpdatedAt(new \DateTime('now'));    
         if ($this->getCreatedAt() === null) {
             $this->setCreatedAt(new \DateTime('now'));
+        }
+    }
+
+    public function __toString()
+    {
+        return $this->titre;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(?string $thumbnail): self
+    {
+        $this->thumbnail = $thumbnail;
+
+        return $this;
+    }
+
+    public function getThumbnailFile()
+    {
+        return $this->thumbnailFile;
+    }
+
+    /**
+     *
+     * @param string|null $thumbnailFile
+     * @throws \Exception
+     */
+    public function setThumbnailFile($thumbnailFile): void
+    {
+        $this->thumbnailFile = $thumbnailFile;
+
+        if($thumbnailFile) {
+            $this->updatedAt = new \DateTime();
         }
     }
 }

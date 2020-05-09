@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet - {{projets.nom}}{% endblock %}
+
+{% set description = projets.introduction %}
+{% block bodyclass %}class="font-dark"{% endblock %}
+
+{% block body %}
+    {% include 'partials/nav.html.twig' %}
+    <div class="uk-margin-large-top">
+        <div class="uk-flex uk-flex-center@m uk-flex-auto uk-flex-wrap">
+            {% if projets.type == "Webdesign" %}
+                <div class="responsive-layout uk-width-1-1 uk-width-1-2@m uk-margin-medium-top uk-margin-medium-left uk-height-medium uk-height-large@m">
+                    <div class="laptop shadow-box-left slideup" style="background-color:white;  height: 350px; width: 550px;">
+                        <img src="{{upload_path}}projets/responsive/{{projets.responsiveImageLaptop}}" alt="{{projets.responsiveImageLaptop}}">
+                    </div>
+                    <div class="phone shadow-box-center slideup" style="background-color:white; height: 240px; width: 140px;">
+                        <img src="{{upload_path}}projets/responsive/{{projets.responsiveImagePhone}}" alt="{{projets.responsiveImagePhone}}">
+                        </div>
+                    <div class="ipad shadow-box-center slideup" style="background-color:white; height: 380px; width: 280px;">
+                        <img src="{{upload_path}}projets/responsive/{{projets.responsiveImageIpad}}" alt="{{projets.responsiveImageIpad}}">
+                    </div>
+                </div>
+            {% elseif projets.type == "Print" %}
+                <div class="responsive-layout uk-width-1-1 uk-width-1-2@m uk-margin-medium-top uk-margin-medium-left uk-height-medium uk-height-large@m">
+                    {{projets.description | raw }}
+                </div>
+            {% endif %}
+            <div class="uk-width-1-1 uk-width-1-3@m uk-margin-medium-top uk-height-large@m">
+                <div class="uk-card uk-card-default uk-margin-large-top uk-card-body">
+                    <h3 class="uk-card-title">{{projets.nom}}</h3>
+                    {% for techno in projets.technologie %}
+                        {% if techno.nom == "Wordpress" %}
+                            <div class="uk-badge uk-label wordpress uk-margin-small-right"><i class="fab fa-wordpress"></i> {{techno.nom}}</div>
+                        {% elseif techno.nom == "Symfony" %}
+                            <div class="uk-badge uk-label symfony uk-margin-small-right"><i class="fab fa-symfony"></i> {{techno.nom}}</div>
+                        {% else %}
+                            <div class="uk-badge uk-label gd-badge">{{techno.nom}}</div>
+                        {% endif %}
+                    {% endfor %}
+                    <hr class="uk-divider-small">
+                    {{projets.description | raw }}
+                    <br>
+                    <a href="{{projets.lien}}" target="_blank" class="uk-button bg-orange font-blanc uk-margin-large-bottom">Visiter le site web</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

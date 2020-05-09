@@ -1,6 +1,7 @@
 easy_admin:
   design:
     menu:
+      - {label: 'Aller sur le site', icon: 'home', route: 'home', target: '_blank'}
       - label: 'Blog'
       - {entity: 'Articles', icon: 'newspaper-o'}
       - {entity: 'Categories', icon: 'inbox'}
@@ -15,7 +16,6 @@ easy_admin:
       - label: 'Block'
       - {entity: 'Blocs', label: 'Blocs', icon: 'cubes'}
       - {entity: 'LayoutBlock', label: 'Layout', icon: 'window-restore'}
-      - label: 'Média'
       - label: 'Portfolio'
       - {entity: 'Projets', label: 'Projets', icon: 'folder-open'}
       - {entity: 'Technologie', params: { sortField: 'nom', sortDirection: 'ASC' }, icon: 'inbox'}

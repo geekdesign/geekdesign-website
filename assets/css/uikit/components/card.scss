@@ -51,7 +51,7 @@ $card-badge-right:                              $card-badge-top !default;
 
 $card-hover-background:                         $global-muted-background !default;
 
-$card-default-background:                       $global-muted-background !default;
+$card-default-background:                       $gd-blanc;
 $card-default-color:                            $global-color !default;
 $card-default-title-color:                      $global-emphasis-color !default;
 $card-default-hover-background:                 darken($card-default-background, 5%) !default;
@@ -230,6 +230,7 @@ $card-large-footer-padding-vertical-l:          round($global-large-gutter / 2) 
     background: $card-default-background;
     color: $card-default-color;
     @if(mixin-exists(hook-card-default)) {@include hook-card-default();}
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .uk-card-default .uk-card-title {

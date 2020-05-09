@@ -10,10 +10,13 @@
 //
 // Colors
 //
-$gd-orange: rgb(230, 76, 60);
+$gd-orange: rgba(230, 76, 60, 1);
+$gd-orange-hover: rgb(189, 63, 49);
 $gd-bleu: rgba(44, 62, 80, 1);
 $gd-gris: rgba(51, 51, 51, 1);
-$gd-blanc: rgba(255,255,255,.7);
+$gd-blanc: rgba(255,255,255,1);
+$gd-wordpress-color: rgba(0,115,170, 1);
+$gd-symfony-color: rgba(48,48,48, 1);
 
 $global-secondary-background: $gd-bleu;
 $global-color:$gd-bleu;
@@ -61,6 +64,21 @@ $base-link-hover-color: $gd-bleu;
 
 .bg-gris {
     background-color: $gd-gris!important;
+}
+
+.symfony{
+    background-color: $gd-symfony-color!important;
+    color: $gd-blanc!important;
+}
+
+.wordpress{
+    background-color: $gd-wordpress-color!important;
+    color: $gd-blanc!important;
+}
+
+.gd-badge{
+    background-color: $gd-bleu!important;
+    color: $gd-blanc!important;
 }
 
 

@@ -2,6 +2,25 @@ easy_admin:
   entities:
     Blocs:
       class: App\Entity\Block
+      form:
+        fields:
+          - { type: 'group', icon: 'pencil', label: "Information système", css_class: 'col-lg-12'}
+          - nom
+          - { type: 'group', icon: 'pencil', label: "Contenu affiché", css_class: 'col-lg-7'}
+          - { property: 'titre', label: 'Titre'}
+          - introduction
+          - { property: 'content', label: 'Contenu', type: 'text_editor'}
+          - { property: 'lien', label: 'Lien'}
+          - { property: 'textLien', label: 'Text du bouton'}
+          - { property: 'thumbnailFile', type: 'vich_image', label: 'Image'}
+          - { type: 'group', icon: 'cog', label: "Design du bloc", css_class: 'col-lg-4'}
+          - { property: 'layout', label: 'Design du bloc'}
+          - { property: 'couleur', label: 'Couleur de fond'}
+          - { property: 'textBlanc', label: 'Text clair'}
+          - { property: 'page', label: 'Page ou doit figurer le bloc'}
+          - { property: 'zone', label: 'Zone ou doit figurer le bloc'}
+          - { property: 'niveau', label: 'Niveau'}
+          - { property: 'is_online', label: 'En ligne', type: 'checkbox'}
       list:
         title: "Liste des Blocs"
         fields: 
@@ -12,6 +31,7 @@ easy_admin:
           - { property: 'page', label: 'Sur la page'}
           - { property: 'zone', label: 'Zone' }
           - { property: 'niveau', label: 'Niveau' }
+          - { property: 'thumbnail', type: 'image', label: 'Image' , base_path: '%blocks%' }
         actions:
           - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
           - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

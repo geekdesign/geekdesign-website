@@ -3,9 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\BlockRepository")
+ * @Vich\Uploadable()
+ * @ORM\HasLifecycleCallbacks
  */
 class Block
 {
@@ -80,6 +83,16 @@ class Block
      * @ORM\ManyToOne(targetEntity="App\Entity\Zone", inversedBy="blocks")
      */
     private $zone;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $thumbnail;
+
+    /**
+     * @Vich\UploadableField(mapping="blocks_thumbnails", fileNameProperty="thumbnail")
+     */
+    private $thumbnailFile;
 
     public function __toString()
     {
@@ -245,5 +258,31 @@ class Block
         $this->zone = $zone;
 
         return $this;
+    }
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(?string $thumbnail): self
+    {
+        $this->thumbnail = $thumbnail;
+
+        return $this;
+    }
+
+    public function getThumbnailFile()
+    {
+        return $this->thumbnailFile;
+    }
+
+    /**
+     *
+     * @param string|null $thumbnailFile
+     * @throws \Exception
+     */
+    public function setThumbnailFile($thumbnailFile): void
+    {
+        $this->thumbnailFile = $thumbnailFile;
     }
 }

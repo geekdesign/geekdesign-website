@@ -1,0 +1,57 @@
+<!-- Menu du haut -->
+<nav class="uk-navbar-container uk-navbar-transparent uk-margin uk-light uk-visible@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <div class="uk-navbar-center-left">
+            <div>
+                <ul class="uk-navbar-nav uk-text-uppercase gd-navbar-home">
+                    <li {% if app.request.get('_route') == 'home' %}class="uk-active"{% endif %}><a href="{{ path('home') }}">Home</a></li>
+                    <li><a href="{{ path('home') }}#travail" uk-scroll>Travail</a></li>
+                    <li><a href="{{ path('home') }}#portfolio" uk-scroll>Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="uk-navbar-item uk-logo" href="{{ path('home') }}">
+            <svg width="50" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1843.71 1593.42"><defs><style>.cls-5{fill:#e64c3c;stroke:#e64c3c;stroke-miterlimit:10;}</style></defs><title>Fichier 2</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-5" d="M1263.8,502.57H598.18V723.73H796.51v103.8a8.06,8.06,0,0,1-1.48.67c-65.12,32.36-136,52.23-191.75,52.23C422.67,880.43,284,740.24,284,554.94c0-182.22,137.1-322.41,316.23-322.41,101.25,0,211.89,45.12,291.25,118.3l155.77-188.39C935.08,62.8,763.74.5,601.8.5,257.51.5.5,238.71.5,554.94.5,872.64,251.33,1112.6,583,1112.6c67.55,0,141-11.55,212-31.56v511.88h457.89c350.47,0,590.29-222.77,590.29-545.18C1843.21,723.73,1606.48,502.57,1263.8,502.57Zm6.31,869.19H1072.18v-648h185.44c175.91,0,303.74,132.4,303.74,325.63C1561.36,1240.84,1439.84,1371.76,1270.11,1371.76Z"/></g></g></svg>
+        </a>
+        <div class="uk-navbar-center-right">
+            <div>
+                <ul class="uk-navbar-nav uk-text-uppercase gd-navbar-home">
+                    <li><a href="{{ path('home') }}#formules" uk-scroll>Formules</a></li>
+                    <li {% if app.request.get('_route') == 'blog' %}class="uk-active"{% endif %}><a href="{{ path('blog') }}">Blog</a></li>
+                    <li><a href="{{ path('home') }}#contact" uk-scroll>Contact</a></li>
+                </ul>
+               </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="uk-navbar uk-navbar-transparent uk-margin uk-light uk-hidden@m">
+    <div class="uk-navbar-right">
+        <a class="uk-navbar-toggle" href="#offcanvas-slide" uk-toggle>
+            <span class="uk-margin-small-right">Menu</span><span uk-navbar-toggle-icon></span> 
+        </a>
+    </div>
+</nav>
+
+
+<div id="offcanvas-slide" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default font-blanc">
+            <li {% if app.request.get('_route') == 'home' %}class="uk-active"{% endif %}><a href="{{ path('home') }}">Home</a></li>
+            <li><a href="{{ path('home') }}#travail">Travail</a></li>
+            <li><a href="{{ path('home') }}#portfolio">Portfolio</a></li>
+            <li><a href="{{ path('home') }}#formules">Formules</a></li>
+            <li {% if app.request.get('_route') == 'blog' %}class="uk-active"{% endif %}><a href="{{ path('blog') }}">Blog</a></li>
+            <li><a href="{{ path('home') }}#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</div>
+
+{% for message in app.flashes('message') %}
+    <div class="uk-alert-primary" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+            {{message}}
+    </div>
+{% endfor %}

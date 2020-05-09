@@ -7,8 +7,10 @@
 {% block body %}
     {% include 'partials/pageHeader.html.twig' %}
     {% include "partials/zone.html.twig" with {'zone': 'top'} %}
-    {{page.contenu}}
-    <br>
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+    {{page.contenu  | raw}}
+    </div>
     {% include "partials/zone.html.twig" with {'zone': 'milieu'} %}
     {% include "partials/zone.html.twig" with {'zone': 'bas'} %}
+    {% include "partials/footer.html.twig" %}
 {% endblock %}

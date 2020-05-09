@@ -16,14 +16,14 @@ class ArticlesController extends AbstractController
      */
     public function index(ArticlesRepository $repo, PagesRepository $page, LayoutBlockRepository $layout, BlockRepository $block)
     {
-        $articles = $repo->findAll();
+        $post = $repo->findArticles(999, 0);
         $blocks = $block->findAll(); 
-        $pages = $page->findAll(); 
+        $pages = $page->findOneBy(array('slug' => 'blog'));
         
         return $this->render('articles/index.html.twig', [
             'page' => $pages,
             'blocks' => $blocks,
-            'articles' => $articles,
+            'posts' => $post,
         ]);
     }
 }

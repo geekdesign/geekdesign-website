@@ -9,12 +9,14 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/Pierre-Alain/Dropbox (Compte personnel)/Webdesign/symfony/geekdesign/src/Controller/ProjetsController.php'|file_link(0) }}">src/Controller/ProjetsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/Pierre-Alain/Dropbox (Compte personnel)/Webdesign/symfony/geekdesign/templates/projets/index.html.twig'|file_link(0) }}">templates/projets/index.html.twig</a></code></li>
-    </ul>
+    {% for projet in projets %}
+        {{projet.nom}}
+        {{projet.attachments.snapshot.0.image}}
+    {% endfor %}
+<div class="slideup">
+    <img width="1920" height="4590" src="https://premiumaddons.b-cdn.net/wp-content/uploads/2019/09/cafe-wiz.jpg" class="attachment-full size-full" alt="Image Scroll Widget for Elementor" srcset="https://premiumaddons.b-cdn.net/wp-content/uploads/2019/09/cafe-wiz.jpg 1920w, https://premiumaddons.b-cdn.net/wp-content/uploads/2019/09/cafe-wiz-125x300.jpg 125w, https://premiumaddons.b-cdn.net/wp-content/uploads/2019/09/cafe-wiz-768x1836.jpg 768w, https://premiumaddons.b-cdn.net/wp-content/uploads/2019/09/cafe-wiz-428x1024.jpg 428w" sizes="(max-width: 1920px) 100vw, 1920px" style="transform: translateY(0px);">                    </div>
+</div>
+    
 </div>
 {% endblock %}

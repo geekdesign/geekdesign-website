@@ -2,6 +2,16 @@ easy_admin:
   entities:
       Pages:
         class: App\Entity\Pages
+        form:
+          fields:
+            - { type: 'group', icon: 'pencil', label: 'Contenu de la page', css_class: 'col-lg-7'} 
+            - titre
+            - introduction
+            - { property: 'contenu', type: 'text_editor'}
+            - { type: 'group', icon: 'cog', label: 'Paramètres', css_class: 'col-lg-5'}
+            - { property: 'thumbnailFile', type: 'vich_image', label: 'Image'}
+            - { property: 'is_online', label: 'En ligne', type: 'checkbox'}
+            - blocks
         list:
           title: "Liste des pages"
           fields: 
@@ -11,5 +21,7 @@ easy_admin:
             - { property: 'createdAt', label: 'Date de création', format: 'j.m.Y' }
             - { property: 'updatedAt', label: 'Dernière mise à jour', format: 'j.m.Y' }
           actions:
+            - {name: 'show', icon: 'eye', label: false, css_class: 'btn btn-success'}
             - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
             - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          batch_actions: ['delete']  

@@ -1,0 +1,35 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings: 
+        articles_thumbnails:
+            uri_prefix: '%articles%'
+            upload_destination: '%kernel.project_dir%/public%articles%'
+        projets_attachments:
+            uri_prefix: '%projets%'
+            upload_destination: '%kernel.project_dir%/public%projets%'
+        projets_responsive_laptop:
+            uri_prefix: '%projets_responsive%'
+            upload_destination: '%kernel.project_dir%/public%projets_responsive%'
+        projets_responsive_ipad:
+            uri_prefix: '%projets_responsive%'
+            upload_destination: '%kernel.project_dir%/public%projets_responsive%'
+        projets_responsive_phone:
+            uri_prefix: '%projets_responsive%'
+            upload_destination: '%kernel.project_dir%/public%projets_responsive%'
+        projets_print_1:
+            uri_prefix: '%projets_print%'
+            upload_destination: '%kernel.project_dir%/public%projets_print%'
+        projets_print_2:
+            uri_prefix: '%projets_print%'
+            upload_destination: '%kernel.project_dir%/public%projets_print%'
+        projets_print_3:
+            uri_prefix: '%projets_print%'
+            upload_destination: '%kernel.project_dir%/public%projets_print%'
+        pages_thumbnails:
+            uri_prefix: '%pages%'
+            upload_destination: '%kernel.project_dir%/public%pages%'
+        blocks_thumbnails:
+            uri_prefix: '%blocks%'
+            upload_destination: '%kernel.project_dir%/public%blocks%'
+

@@ -20,21 +20,19 @@ class ArticlesRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Articles[] Returns an array of Articles objects
+    //  * @return Projets[] Returns an array of Projets objects
     //  */
-    /*
-    public function findByExampleField($value)
+    public function findArticles($limit, $offset = 0)
     {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
+        return $this->createQueryBuilder('p')
+            ->andWhere('p.isOnline = true')
+            ->orderBy('p.id', 'DESC')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
 
     /*
     public function findOneBySomeField($value): ?Articles
