@@ -6,11 +6,13 @@
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
             <ul class="uk-slideshow-items">
                 {% for image in item.attachments %}
-                    <li>
-                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
-                            <img src="{{upload_path}}projets/diaporama/{{image.image}}" alt="{{image.image}}" uk-cover>
-                        </div>
-                    </li>
+                    {% if image.class == "Diaporama" %}
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
+                                <img src="{{upload_path}}{{image.image}}" alt="{{image.image}}" uk-cover>
+                            </div>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -39,16 +41,18 @@
     </div>
 </div>
 {% elseif item.id is even %}
-<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-margin-large-bottom" uk-grid>
     <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
             <ul class="uk-slideshow-items">
                 {% for image in item.attachments %}
-                    <li>
-                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
-                            <img src="{{upload_path}}projets/diaporama/{{image.image}}" alt="{{image.image}}" uk-cover>
-                        </div>
-                    </li>
+                    {% if image.class == "Diaporama" %}
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
+                                <img src="{{upload_path}}{{image.image}}" alt="{{image.image}}" uk-cover>
+                            </div>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>

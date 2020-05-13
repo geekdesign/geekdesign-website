@@ -73,7 +73,7 @@ class Articles
     private $thumbnail;
 
     /**
-     * @Vich\UploadableField(mapping="articles_thumbnails", fileNameProperty="thumbnail")
+     * @Vich\UploadableField(mapping="images", fileNameProperty="thumbnail")
      */
     private $thumbnailFile;
 

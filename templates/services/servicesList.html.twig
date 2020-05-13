@@ -3,8 +3,8 @@
         {% for service in services %}
             {% if service.isBest == true %}
             <div>
-                <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light uk-text-center">
-                    <i class="{{service.icon}} uk-heading-medium uk-margin-medium-top font-blanc"></i>
+                <div class="uk-card uk-card-secondary icon-card uk-card-hover uk-card-body uk-light uk-text-center">
+                    <i class="{{service.icon}} uk-heading-medium uk-margin-medium-top font-blanc icon"></i>
                     <h3 class="uk-card-title uk-text-center uk-text-light font-blanc">{{service.titre}}</h3>
                     <h1 class="uk-heading-small uk-margin-small-top uk-text-uppercase font-blanc">{{service.prix}} chf</h1>
                     <p>{{service.description}}</p>
@@ -13,8 +13,8 @@
             </div>
             {% else %}
             <div class="uk-margin-medium">
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
-                    <i class="{{service.icon}} uk-heading-medium uk-margin-small-top"></i>
+                <div class="uk-card uk-card-default icon-card uk-card-hover uk-card-body uk-text-center">
+                    <i class="{{service.icon}} icon uk-heading-medium uk-margin-small-top"></i>
                     <h4 class="uk-card-title uk-text-center uk-text-light">{{service.titre}}</h4>
                     <h4 class="uk-heading-small uk-margin-small-top uk-text-uppercase">{{service.prix}} chf</h4>
                     <p>{{service.description}}</p>

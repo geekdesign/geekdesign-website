@@ -5,15 +5,15 @@ namespace App\Entity;
 use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\Collection;
-use Symfony\Component\HttpFoundation\File\File;
 use Doctrine\Common\Collections\ArrayCollection;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProjetsRepository")
+ * @Vich\Uploadable()
  * @ORM\HasLifecycleCallbacks
- * @Vich\Uploadable
  */
 class Projets
 {
@@ -86,8 +86,9 @@ class Projets
     private $responsiveImageLaptop;
 
     /**
-     * @Vich\UploadableField(mapping="projets_responsive_laptop", fileNameProperty="responsiveImageLaptop")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="imagesLaptop", fileNameProperty="responsiveImageLaptop")
+     * 
      */
     private $responsiveImageLaptopFile;
 
@@ -98,8 +99,9 @@ class Projets
     private $responsiveImageIpad;
 
     /**
-     * @Vich\UploadableField(mapping="projets_responsive_ipad", fileNameProperty="responsiveImageIpad")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="imagesIpad", fileNameProperty="responsiveImageIpad")
+     * 
      */
     private $responsiveImageIpadFile;
 
@@ -110,8 +112,9 @@ class Projets
     private $responsiveImagePhone;
 
     /**
-     * @Vich\UploadableField(mapping="projets_responsive_phone", fileNameProperty="responsiveImagePhone")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="imagesPhone", fileNameProperty="responsiveImagePhone")
+     * 
      */
     private $responsiveImagePhoneFile;
 
@@ -122,8 +125,9 @@ class Projets
     private $printImage1;
 
     /**
-     * @Vich\UploadableField(mapping="projets_print_1", fileNameProperty="printImage1")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="images", fileNameProperty="printImage1")
+     * 
      */
     private $printImage1File;
 
@@ -134,8 +138,9 @@ class Projets
     private $printImage2;
 
     /**
-     * @Vich\UploadableField(mapping="projets_print_2", fileNameProperty="printImage2")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="images", fileNameProperty="printImage2")
+     * 
      */
     private $printImage2File;
 
@@ -146,8 +151,9 @@ class Projets
     private $printImage3;
 
     /**
-     * @Vich\UploadableField(mapping="projets_print_3", fileNameProperty="printImage3")
-     * @var File
+     * @Assert\Image(mimeTypes = {"image/gif", "image/jpeg", "image/png"})
+     * @Vich\UploadableField(mapping="images", fileNameProperty="printImage3")
+     * 
      */
     private $printImage3File;
 
@@ -392,7 +398,7 @@ class Projets
      * @param string|null $responsiveImageLaptopFile
      * @throws \Exception
      */
-    public function setResponsiveImageLaptopFile(File $responsiveImageLaptopFile = null): void
+    public function setResponsiveImageLaptopFile($responsiveImageLaptopFile): void
     {
         $this->responsiveImageLaptopFile = $responsiveImageLaptopFile;
     }
@@ -422,7 +428,7 @@ class Projets
      * @param string|null $responsiveImageIpadFile
      * @throws \Exception
      */
-    public function setResponsiveImageIpadFile(File  $responsiveImageIpadFile = null): void
+    public function setResponsiveImageIpadFile($responsiveImageIpadFile): void
     {
         $this->responsiveImageIpadFile = $responsiveImageIpadFile;
     }
@@ -453,13 +459,10 @@ class Projets
      * @param string|null $responsiveImagePhoneFile
      * @throws \Exception
      */
-    public function setResponsiveImagePhoneFile(File  $responsiveImagePhoneFile = null): void
+    public function setResponsiveImagePhoneFile($responsiveImagePhoneFile): void
     {
         $this->responsiveImagePhoneFile = $responsiveImagePhoneFile;
     }
-
-
-
 
 
     public function getPrintImage1(): ?string
@@ -484,7 +487,7 @@ class Projets
      * @param string|null $printImage1File
      * @throws \Exception
      */
-    public function setPrintImage1File(File $printImage1File = null): void
+    public function setPrintImage1File($printImage1File): void
     {
         $this->printImage1File = $printImage1File;
     }
@@ -514,7 +517,7 @@ class Projets
      * @param string|null $printImage2File
      * @throws \Exception
      */
-    public function setPrintImage2File(File $printImage2File = null): void
+    public function setPrintImage2File($printImage2File): void
     {
         $this->printImage2File = $printImage2File;
     }
@@ -544,7 +547,7 @@ class Projets
      * @param string|null $printImage2File
      * @throws \Exception
      */
-    public function setPrintImage3File(File $printImage3File = null): void
+    public function setPrintImage3File($printImage3File): void
     {
         $this->printImage3File = $printImage3File;
     }

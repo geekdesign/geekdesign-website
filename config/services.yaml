@@ -6,13 +6,10 @@
 #upload_directory: '%kernel.project_dir%/public/uploads/'
 #upload_path: '/uploads/'
 parameters:
-    locale: 'fr'
-    articles: '/uploads/articles/'
-    projets: '/uploads/projets/diaporama/'
-    projets_responsive: '/uploads/projets/responsive'
-    projets_print: '/uploads/projets/print'
-    pages: '/uploads/pages/'
-    blocks: '/uploads/blocks/'
+    locale: en
+    app.locales: [en, fr]
+    imagesFile: '/uploads/images/'
+    upload_path: '%kernel.project_dir%/public/uploads/images'
 
 services:
     # default configuration for services in *this* file

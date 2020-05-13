@@ -20,3 +20,4 @@ easy_admin:
       - {entity: 'Projets', label: 'Projets', icon: 'folder-open'}
       - {entity: 'Technologie', params: { sortField: 'nom', sortDirection: 'ASC' }, icon: 'inbox'}
       - {entity: 'Types', icon: 'inbox'}
+      - {entity: 'AttachmentClass', icon: 'inbox'}

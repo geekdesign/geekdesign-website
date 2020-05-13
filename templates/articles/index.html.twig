@@ -11,7 +11,7 @@
             {% for article in posts %}
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top uk-overflow-hidden">
-                            <img class="uk-animation-reverse" src="{{upload_path}}articles/{{article.thumbnail}}" alt="{{article.thumbnail}}" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                            <img class="uk-animation-reverse" src="{{upload_path}}{{article.thumbnail}}" alt="{{article.thumbnail}}" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                         </div>
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">{{article.titre}}</h3>

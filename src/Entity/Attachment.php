@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AttachmentRepository")
@@ -36,7 +37,7 @@ class Attachment
     private $image;
 
     /**
-     * @Vich\UploadableField(mapping="projets_attachments", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image")
      */
     private $imageFile;
 
@@ -44,6 +45,11 @@ class Attachment
      * @ORM\ManyToOne(targetEntity="Projets", inversedBy="attachments")
      */
     private $projets;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\AttachmentClass", inversedBy="attachments")
+     */
+    private $class;
 
     public function __toString()
     {
@@ -133,6 +139,18 @@ class Attachment
     public function setProjets(?Projets $projets): self
     {
         $this->projets = $projets;
+
+        return $this;
+    }
+
+    public function getClass(): ?AttachmentClass
+    {
+        return $this->class;
+    }
+
+    public function setClass(?AttachmentClass $class): self
+    {
+        $this->class = $class;
 
         return $this;
     }

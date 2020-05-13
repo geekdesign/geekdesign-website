@@ -31,7 +31,7 @@ easy_admin:
           - { property: 'page', label: 'Sur la page'}
           - { property: 'zone', label: 'Zone' }
           - { property: 'niveau', label: 'Niveau' }
-          - { property: 'thumbnail', type: 'image', label: 'Image' , base_path: '%blocks%' }
+          - { property: 'thumbnail', type: 'image', label: 'Image' , base_path: '%imagesFile%' }
         actions:
           - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
           - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

@@ -90,7 +90,7 @@ class Block
     private $thumbnail;
 
     /**
-     * @Vich\UploadableField(mapping="blocks_thumbnails", fileNameProperty="thumbnail")
+     * @Vich\UploadableField(mapping="images", fileNameProperty="thumbnail")
      */
     private $thumbnailFile;
 

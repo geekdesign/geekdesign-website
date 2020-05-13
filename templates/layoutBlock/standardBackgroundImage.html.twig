@@ -1,4 +1,4 @@
-<div class="uk-background-cover" uk-parallax="bgy: -100" style="background-image: url('{{upload_path}}blocks/{{bloc.thumbnail}}');">
+<div class="uk-background-cover" uk-parallax="bgy: -100" style="background-image: url('{{ vich_uploader_asset(bloc, 'thumbnailFile')}}');">
 		<div class="uk-overlay uk-overlay-primary uk-text-center uk-light">
 			<h1 class="uk-heading-small uk-margin-large-top {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.titre}}</h1>
             <div class="uk-text-center uk-margin-medium-top uk-margin-large-bottom {% if bloc.textBlanc == true %}font-blanc{% endif %}">{{bloc.content | raw}}</div>
