@@ -5,11 +5,11 @@
 {% block body %}
     {% include 'partials/pageHeader.html.twig' %}
     <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-        <div class="uk-child-width-1-2@m" uk-grid>
-            <div>
+        <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
         {% if posts|length > 0 %}
             {% for article in posts %}
-                    <div class="uk-card uk-card-default">
+                <div>
+                    <div class="uk-card uk-card-hover">
                         <div class="uk-card-media-top uk-overflow-hidden">
                             <img class="uk-animation-reverse" src="{{upload_path}}{{article.thumbnail}}" alt="{{article.thumbnail}}" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                         </div>
@@ -20,13 +20,14 @@
                             <a href="#" class="uk-button uk-button-secondary">Lire l'article</a>
                         </div>
                     </div>
+                </div>
             {% endfor %}
+        </div>
         {% else %}
+        
             <h2 class="uk-heading-divider">Aucuns articles de blog trouvé, désolé !</h2>
             <a href="{{ path('home') }}" class="uk-button uk-button-secondary">Retour à la page d'accueil</a>
         {% endif %}
-        </div>
-        </div>
 </div>
 {% include "partials/footer.html.twig" %}
 {% endblock %}
