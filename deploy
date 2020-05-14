@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ noeo_scpiepciwp@geekdesign.ch:~/geek --include=public/build --include=vendor --exclude-from=.gitignore --exclude=".*"
