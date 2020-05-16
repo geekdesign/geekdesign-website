@@ -39,11 +39,13 @@ Encore
 
     .addEntry('js/front/app', './assets/js/front/app.js')
     .addEntry('js/admin/app', './assets/js/admin/app.js')
+    .addEntry('adminjs', './vendor/easycorp/easyadmin-bundle/assets/js/app.js')
     .addStyleEntry('css/main', './assets/css/csskit.scss')
     .addStyleEntry('css/front/app', './assets/css/front/app.scss')
     .addStyleEntry('css/front/style', './assets/css/front/style.scss')
     .addStyleEntry('css/admin/app', './assets/css/front/app.scss')
     .addStyleEntry('css/admin/style', './assets/css/front/style.scss')
+    .addStyleEntry('admincss', './vendor/easycorp/easyadmin-bundle/assets/css/app.scss')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

@@ -33,32 +33,6 @@ box-shadow: 9px 11px 20px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 11px 20px -6px rgba(0,0,0,0.75);
 }
 
-.responsive-layout{
-    position: relative;
-    height: 80vh;
-}
-
-.phone{
-    position: absolute;
-    left: -70px; 
-    top: 180px;
-}
-
-.laptop{
-    position: absolute;
-}
-
-.laptop:hover{
-    position: absolute;
-    z-index: 999;
-}
-
-.ipad{
-    position: absolute;
-    left: 460px; 
-    top: 100px;
-}
-
 .uk-button.bg-orange:hover{
     background-color: $gd-orange-hover!important;
 }
@@ -114,3 +88,41 @@ box-shadow: 9px 11px 20px -6px rgba(0,0,0,0.75);
         transform: scale(1.3)!important;
         color: #4e71ba!important;
     }
+
+
+/* Phone landscape and bigger */
+@media (max-width: $breakpoint-small) {
+
+    .uk-text-lead{
+        font-size: 1rem;
+    }
+    .uk-heading-small{
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: $breakpoint-medium) {
+
+    
+
+}
+
+/* Desktop and bigger */
+@media (min-width: $breakpoint-large) {
+
+    
+
+}
+
+/* Large screen and bigger */
+@media (min-width: $breakpoint-xlarge) {
+
+    
+
+}

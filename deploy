@@ -1,2 +1,5 @@
 #!/bin/sh
-rsync -av ./ noeo_scpiepciwp@geekdesign.ch:~/geek --include=public/build --include=vendor --exclude-from=.gitignore --exclude=".*"
+npm run build
+rsync -av ./ noeo_scpiepciwp@geekdesign.ch:~/geek --include=public/build --include=public/.htaccess --include=vendor --exclude-from=.gitignore --exclude=".*"
+cd geek
+php-7.4 bin/console cache:clear

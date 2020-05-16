@@ -60,6 +60,7 @@
                         </div>
                         <div class="uk-width-1-1">
                             {{form_widget(contactform.email)}}
+                            {{form_widget(contactform.phone, {attr:{class: 'form-control', style: 'display:none !important', tabindex: '-1', autocomplete: 'off', ref: 'initHoneyPot'}}) }}
                         </div>
                         <div class="uk-width-1-1">
                             {{form_widget(contactform.message)}}

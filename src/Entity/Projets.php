@@ -75,7 +75,7 @@ class Projets
     private $updatedAt;
 
     /**
-     * @ORM\OneToMany(targetEntity="Attachment", mappedBy="projets", cascade={"all"}, orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="Attachment", mappedBy="projets", cascade={"persist"}, orphanRemoval=true)
      */
     private $attachments;
 
@@ -359,6 +359,9 @@ class Projets
             $this->attachments[] = $attachment;
             $attachment->setProjets($this);
         }
+        if($attachment) {
+            $this->updatedAt = new \DateTime();
+        }
 
         return $this;
     }
@@ -370,6 +373,9 @@ class Projets
             // set the owning side to null (unless already changed)
             if ($attachment->getProjets() === $this) {
                 $attachment->setProjets(null);
+            }
+            if($attachment) {
+                $this->updatedAt = new \DateTime();
             }
         }
 

@@ -3,50 +3,52 @@
 {% block title %}Projet - {{projets.nom}}{% endblock %}
 
 {% set description = projets.introduction %}
-{% block bodyclass %}class="font-dark"{% endblock %}
+{% block bodyclass %}class="font-dark uk-background-secondary"{% endblock %}
 
 {% block body %}
     {% include 'partials/nav.html.twig' %}
-    <div class="uk-margin-large-top">
-        <div class="uk-flex uk-flex-center@m uk-flex-auto uk-flex-wrap">
-                <div class="responsive-layout uk-width-1-1 uk-width-1-2@m uk-margin-medium-top uk-margin-medium-left uk-height-medium uk-height-large@m">
-                        {% for image in projets.attachments %}
-                            {% if image.class == "Responsive Laptop" %}
-                                <div class="laptop shadow-box-left slideup" style="background-color:white;  height: 350px; width: 550px;">
-                                    <img src="{{upload_path}}{{image.image}}" alt="{{projets.nom}} responsive laptop">
+    <div class="uk-container uk-margin-small-top uk-margin-large-bottom">
+        <div class="uk-container">
+            <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: pull; finite: true; autoplay: true;">
+                <ul class="uk-slideshow-items">
+                    {% for image in projets.attachments %}
+                        {% if image.class == "Single Diaporama" %}
+                            <li>
+                                <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
+                                    <img src="{{upload_path}}{{image.image}}" alt="{{projets.nom}}" uk-cover>
                                 </div>
-                            {% elseif image.class == "Responsive Phone" %}
-                                <div class="phone shadow-box-center slideup" style="background-color:white; height: 240px; width: 140px;">
-                                    <img src="{{upload_path}}{{image.image}}" alt="{{projets.nom}} responsive téléphone">
-                                </div>
-                            {% elseif image.class == "Responsive Ipad" %}
-                                <div class="ipad shadow-box-center slideup" style="background-color:white; height: 380px; width: 280px;">
-                                    <img src="{{upload_path}}{{image.image}}" alt="{{projets.nom}} responsive tablette">
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                </div>
-            <div class="uk-width-1-1 uk-width-1-3@m uk-margin-medium-top uk-height-large@m">
-                <div class="uk-card uk-card-default uk-margin-large-top uk-card-body">
-                    <h3 class="uk-card-title">{{projets.nom}}</h3>
-                    {% for techno in projets.technologie %}
-                        {% if techno.nom == "Wordpress" %}
-                            <div class="uk-badge uk-label wordpress uk-margin-small-right"><i class="fab fa-wordpress"></i> {{techno.nom}}</div>
-                        {% elseif techno.nom == "Symfony" %}
-                            <div class="uk-badge uk-label symfony uk-margin-small-right"><i class="fab fa-symfony"></i> {{techno.nom}}</div>
-                        {% else %}
-                            <div class="uk-badge uk-label gd-badge">{{techno.nom}}</div>
+                            </li>
                         {% endif %}
                     {% endfor %}
-                    <hr class="uk-divider-small">
-                    {{projets.description | raw }}
-                    <br>
-                    <a href="{{projets.lien}}" target="_blank" class="uk-button bg-orange font-blanc uk-margin-large-bottom">Visiter le site web</a>
-                    <br>
-                </div>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">{{projets.nom}}</h3>
+                {% for techno in projets.technologie %}
+                    {% if techno.nom == "Wordpress" %}
+                        <div class="uk-badge uk-label wordpress uk-margin-small-right"><i class="fab fa-wordpress"></i> {{techno.nom}}</div>
+                    {% elseif techno.nom == "Symfony" %}
+                        <div class="uk-badge uk-label symfony uk-margin-small-right"><i class="fab fa-symfony"></i> {{techno.nom}}</div>
+                    {% else %}
+                        <div class="uk-badge uk-label gd-badge">{{techno.nom}}</div>
+                    {% endif %}
+                {% endfor %}
+                {{projets.description | raw }}
+                <br>
+                <a href="{{projets.lien}}" target="_blank" class="uk-button bg-orange font-blanc uk-margin-small-bottom">Visiter le site web</a>
+                <br>
+            </div>
             </div>
         </div>
+        <div class="uk-text-center uk-margin-small-top uk-margin-small-bottom">
+            <a href="{{ path('home') }}#portfolio" class="uk-button bg-orange font-blanc uk-margin-small-bottom">Retourner à la page d'accueil</a>
+        </div>
     </div>
-{% include "partials/footer.html.twig" %}
+    <div class="uk-light uk-margin-small-bottom">
+        {% include "partials/footer.html.twig" %}
+    </div>
 
 {% endblock %}

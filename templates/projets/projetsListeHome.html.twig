@@ -6,7 +6,7 @@
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
             <ul class="uk-slideshow-items">
                 {% for image in item.attachments %}
-                    {% if image.class == "Diaporama" %}
+                    {% if image.class == "Home Diaporama" %}
                         <li>
                             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
                                 <img src="{{upload_path}}{{image.image}}" alt="{{image.image}}" uk-cover>
@@ -45,11 +45,11 @@
     <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
             <ul class="uk-slideshow-items">
-                {% for image in item.attachments %}
-                    {% if image.class == "Diaporama" %}
+                {% for picture in item.attachments %}
+                    {% if picture.class == "Home Diaporama" %}
                         <li>
                             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse">
-                                <img src="{{upload_path}}{{image.image}}" alt="{{image.image}}" uk-cover>
+                                <img src="{{upload_path}}{{picture.image}}" alt="{{picture.image}}" uk-cover>
                             </div>
                         </li>
                     {% endif %}

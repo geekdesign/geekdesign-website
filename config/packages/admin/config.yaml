@@ -3,3 +3,6 @@ easy_admin:
   user:
     display_name: true
     display_avatar: true
+  design:
+    templates:
+      layout: 'bundles/EasyAdminBundle/default/layout.html.twig'

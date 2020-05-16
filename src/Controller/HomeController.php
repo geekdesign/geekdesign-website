@@ -29,25 +29,26 @@ class HomeController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()){
             $contact = $form->getData();
-            //Ici nous envérons le mail
-            $message = (new \Swift_Message('Demande sur GeekDesign'))
-                    ->setFrom($contact['email'])
-                    ->setTo('schutz.pa@gmail.com')
-                    ->setReplyTo($contact['email'])
-                    ->setBody(
-                        $this->renderView(
-                            'emails/contact.html.twig', compact('contact')
-                        ),
-                        'text/html'
-                        )
-            ;
-                        
-            $mailer->send($message);
+            if (empty($contact['phone'])) {
+                //Ici nous envérons le mail
+                $message = (new \Swift_Message('Demande sur GeekDesign'))
+                        ->setFrom($contact['email'])
+                        ->setTo('schutz.pa@gmail.com')
+                        ->setReplyTo($contact['email'])
+                        ->setBody(
+                            $this->renderView(
+                                'emails/contact.html.twig', compact('contact')
+                            ),
+                            'text/html'
+                        );
+                $mailer->send($message);
 
-            unset($form);
-            $form = $this->createForm(ContactType::class);
-
-            $this->addFlash('message', "Le message a bien été envoyé, je vous contacterez trés bientôt !");
+                return $this->redirectToRoute('home');
+            
+                $this->addFlash('message', "Le message a bien été envoyé, je vous contacterez trés bientôt !");
+            }else {
+                return $this->redirectToRoute('home');
+            };
 
         }
 
